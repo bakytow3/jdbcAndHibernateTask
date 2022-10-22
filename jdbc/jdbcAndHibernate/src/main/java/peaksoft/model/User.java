@@ -25,23 +25,31 @@ public class User {
         this.age = age;
     }
 
+    public User(long id, String name, String lastName, byte age) {
+    }
+
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
-    public String getName() {
+    public String getName()
+    {
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public String getLastName() {
+
         return lastName;
     }
 
@@ -56,5 +64,13 @@ public class User {
     public void setAge(Byte age) {
         this.age = age;
     }
-
+@Override
+public String toString() {
+    return "User{" +
+            "id=" + id +
+            ", name='" + name + '\'' +
+            ", lastName='" + lastName + '\'' +
+            ", age=" + age +
+            '}';
+}
 }
