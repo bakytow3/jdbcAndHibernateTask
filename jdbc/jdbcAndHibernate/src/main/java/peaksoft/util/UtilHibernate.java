@@ -21,7 +21,7 @@ public class UtilHibernate {
         properties.put(Environment.PASS, "1234");
 
 
-        properties.put(Environment.HBM2DDL_AUTO, "update");
+        properties.put(Environment.HBM2DDL_AUTO, "create");
         properties.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQL9Dialect");
         properties.put(Environment.SHOW_SQL, "true");
 
